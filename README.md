@@ -12,7 +12,4 @@ Thank you for visiting our Algorithms Solutions and Practice repository, and we 
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+If anyone wants to discuss algorithms or their solutions with me, please feel free to contact me. You can reach out to me by creating an issue in this repository, and I'll get back to you as soon as possible. I'm always open to learning new things and hearing different perspectives, so don't hesitate to reach out!
