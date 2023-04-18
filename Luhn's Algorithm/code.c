@@ -56,6 +56,7 @@ void typeOfCreditCard(char creditCardNumber[]) {
         printf("AMEX\n");
     else if (firstTwoDigit >= 51 && firstTwoDigit <= 55 && len == 16)
         printf("MASTERCARD\n");
+    // TODO: Add more test case for other popular cards
     else
         printf("INVALID\n");
 }
