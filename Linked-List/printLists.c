@@ -1,39 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-struct node
-{
-	int data;
-    struct node *link;
-};
-
-void print_nodes(struct node *head);
+#include "linkedlist.h"
 
 int main() {
-	struct node *head = NULL;
+    struct node *head = NULL;
 
-	head = (struct node *)malloc(sizeof(struct node));
-	head->data = 1;
-	head->link = NULL;
+    head = (struct node *)malloc(sizeof(struct node));
+    head->data = 1;
+    head->link = NULL;
 
- 	struct node *current = (struct node *)malloc(sizeof(struct node));
-	current->data = 2;
-	current->link = NULL;
+    struct node *current = (struct node *)malloc(sizeof(struct node));
+    current->data = 2;
+    current->link = NULL;
 
-	head->link = current;
+    head->link = current;
 
-	print_nodes(head);
-
+    print_nodes(head);
 }
 
 void print_nodes(struct node *head) {
-    if ( head == NULL ) 
+    if (head == NULL)
         printf("Linked List is empty");
 
     struct node *ptr = head;
 
-    while ( ptr != NULL ) {
+    while (ptr != NULL) {
         printf("@[%p] - %d\n", ptr, ptr->data);
-        ptr=ptr->link;
+        ptr = ptr->link;
     }
 }
