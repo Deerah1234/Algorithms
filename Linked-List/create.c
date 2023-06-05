@@ -1,17 +1,66 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "linkedlist.h"
+
+
+struct node
+{
+	int data;
+	struct node *next;
+};
+
+void print_nodes(struct node *head);
+void insert_at_beginning(struct node *head);
 
 int main() {
-    struct node *head = NULL;
+	struct node *head, *newnode, *temp;
+	head = NULL;
 
-    head = (struct node *)malloc(sizeof(struct node));
-    head->data = 1;
-    head->link = NULL;
+	int choice = 1;
 
-    struct node *current = (struct node *)malloc(sizeof(struct node));
-    current->data = 2;
-    current->link = NULL;
+	while (choice)
+	{
+		newnode = malloc(sizeof(struct node));
+		newnode -> next = NULL;
+		printf("Enter value: ");
+		scanf("%d", &newnode->data);
 
-    head->link = current;
+		if ( head == NULL ) {
+			head = temp = newnode;
+		} else {
+			temp->next = newnode;
+			temp = newnode;
+		}
+
+		printf("Do you want to continue? (0 or 1): ");
+		scanf("%d", &choice);
+	}
+
+	if (choice == 0) {
+		print_nodes(head);
+        insert_at_beginning(head);
+	}
+}
+
+void print_nodes(struct node *head) {
+    if (head == NULL)
+        printf("Linked List is empty");
+
+    struct node *ptr = head;
+
+    while (ptr != NULL) {
+        printf("%d\n", ptr->data);
+        ptr = ptr->next;
+    }
+}
+
+void insert_at_beginning(struct node *head) {
+    struct node *newnode;
+
+    newnode = malloc(sizeof(struct node));
+    printf("Enter value: ");
+    scanf("%d", &newnode->data);
+    newnode->next = head;
+
+    head = newnode;
+    print_nodes(head);
 }
