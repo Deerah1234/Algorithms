@@ -53,6 +53,9 @@ void print_nodes(struct node *head) {
     }
 }
 
+/*!SECTION
+	Function to insert at the end of the list
+*/
 void insertAtEnd(struct node *head) {
 	struct node *temp, *newnode;
 	temp = head;

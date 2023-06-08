@@ -54,7 +54,7 @@ void printNodes(struct node *head) {
 }
 
 /*!SECTION
-	Function to insert at the beginning of the linked list
+	Function to insert at the beginning of the list
 */
 void insertAtBeginning(struct node *head) {
     struct node *newnode;
