@@ -8,8 +8,8 @@ struct node
 	struct node *next;
 };
 
-void print_nodes(struct node *head);
-void insert_at_beginning(struct node *head);
+void printNodes(struct node *head);
+void insertAtBeginning(struct node *head);
 
 int main() {
 	struct node *head, *newnode, *temp;
@@ -36,12 +36,12 @@ int main() {
 	}
 
 	if (choice == 0) {
-		print_nodes(head);
-        insert_at_beginning(head);
+		printNodes(head);
+        insertAtBeginning(head);
 	}
 }
 
-void print_nodes(struct node *head) {
+void printNodes(struct node *head) {
     if (head == NULL)
         printf("Linked List is empty");
 
@@ -53,7 +53,7 @@ void print_nodes(struct node *head) {
     }
 }
 
-void insert_at_beginning(struct node *head) {
+void insertAtBeginning(struct node *head) {
     struct node *newnode;
 
     newnode = malloc(sizeof(struct node));

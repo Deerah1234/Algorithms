@@ -8,7 +8,7 @@ struct node
 	struct node *next;
 };
 
-void print_nodes(struct node *head);
+void printNodes(struct node *head);
 
 int main() {
 	struct node *head, *newnode, *temp;
@@ -35,11 +35,11 @@ int main() {
 	}
 
 	if (choice == 0) {
-		print_nodes(head);
+		printNodes(head);
 	}
 }
 
-void print_nodes(struct node *head) {
+void printNodes(struct node *head) {
     if (head == NULL)
         printf("Linked List is empty");
 

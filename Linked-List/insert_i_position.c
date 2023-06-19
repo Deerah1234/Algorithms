@@ -8,7 +8,7 @@ struct node
 	struct node *next;
 };
 
-int length_node(struct node *head);
+int lengthOfNode(struct node *head);
 void print_nodes(struct node *head);
 void insertAtIPosition(struct node *head, int nodeLength);
 
@@ -49,7 +49,7 @@ int main() {
 	}
 }
 
-int length_node(struct node *head) {
+int lengthOfNode(struct node *head) {
     if (head == NULL) {
         printf("Linked List is empty");
 	}

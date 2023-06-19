@@ -15,10 +15,10 @@ int main() {
 
     head->link = current;
 
-    print_nodes(head);
+    printNodes(head);
 }
 
-void print_nodes(struct node *head) {
+void printNodes(struct node *head) {
     if (head == NULL)
         printf("Linked List is empty");
 
