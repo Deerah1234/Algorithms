@@ -1,0 +1,32 @@
+# Ignore bin and obj directories
+bin/
+obj/
+
+# Ignore build artifacts
+*.o
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj.user
+*.sln.docstates
+*.userprefs
+*.sln.ide
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.VC.opendb
+*.opendb
+
+#!SECTION
+../src/output/
+../src/playground.c

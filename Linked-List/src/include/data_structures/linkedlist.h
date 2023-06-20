@@ -1,12 +1,11 @@
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
 
+// Linked List Structure
 struct node
 {
 	int data;
-	struct node *link;
+	struct node *next;
 };
-
-void print_nodes(struct node *head);
 
 #endif
