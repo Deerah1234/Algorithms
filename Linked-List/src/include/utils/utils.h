@@ -9,6 +9,4 @@ void insertAtIPosition(struct node *head, int nodeLength);
 int lengthOfNode(struct node *head);
 int createLinkedList(int choice, struct node **head);
 
-// Additional utility function declarations...
-
 #endif /* UTILS_H */
